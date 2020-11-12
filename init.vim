@@ -17,7 +17,12 @@ let g:airline_theme='gruvbox'
 "let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts = 1
 
-let g:airline_symbols = {}
+"let g:airline_symbols = {}
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
 " unicode symbols
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
@@ -89,3 +94,4 @@ colorscheme gruvbox
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
+
